@@ -1,0 +1,1 @@
+- get various style images and train them on mscoco dataset and get various models weights and update the app
