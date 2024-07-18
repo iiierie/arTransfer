@@ -3,3 +3,4 @@ torchvision
 matplotlib==3.9.1
 numpy==1.26.4
 opencv-python==4.8.0.76
+streamlit==1.36.0
