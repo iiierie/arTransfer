@@ -41,10 +41,10 @@ def main():
         col1, col2 = st.columns(2)
         
         with col1:
-            st.image('../samples/cat.jpg', caption='Cat Image', use_column_width=True)
+            st.image('samples/cat.jpg', caption='Cat Image', use_column_width=True)
 
         with col2:
-            st.image('../samples/stylized_image.jpg', caption='Stylized Image', use_column_width=True)
+            st.image('samples/stylized_image.jpg', caption='Stylized Image', use_column_width=True)
         st.write("---")
         st.write("---")
 
