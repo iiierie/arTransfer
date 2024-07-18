@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arTransfer - Style Transfer App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            /* color: #008CBA; */
+            text-align: center;
+        }
+        h2 {
+            /* color: #008CBA; */
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .top-images {
+            text-align: center; /* Center align images */
+            margin-bottom: 30px;
+        }
+        .top-images img {
+            max-width: 100%; /* Make images responsive */
+            border-radius: 8px; /* Add a slight border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-images">
+        <img src="../samples/cat.jpg" alt="cat Image" height="450" width="45%">
+        <img src="../samples/stylized_image.jpg" alt="stylised Image" height="450" width="45%">
+    </div>
+
+    <div class="container">
+        <!-- <h1>arTransfer - Style Transfer App</h1> -->
+        
+        <div class="section">
+            <div class="section-header">
+                <h2>About</h2>
+            </div>
+            <p>Welcome to arTransfer, a Style Transfer App powered by Streamlit!</p>
+            <p>arTransfer allows you to upload an image and apply various artistic styles to it. Check out different style presets available. [More Coming]</p>
+            
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <h2>How to Use</h2>
+            </div>
+            <ol>
+                <li><strong>Upload Content Image:</strong> Use the sidebar to upload your image (JPEG, JPG, PNG).</li>
+                <li><strong>Choose Style Preset:</strong> Select from various style presets such as Mosaic, Candy, Starry Night, and more.</li>
+                <li><strong>Stylize Image:</strong> Click the button to stylize your uploaded image.</li>
+                <li><strong>View Results:</strong> See the stylized image and a comparison with the original.</li>
+                <li><strong>Download: </strong> Download the stylised image as jpeg to your local machine.</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <h2>Style Presets</h2>
+            </div>
+            <ul>
+                <li>Mosaic</li>
+                <li>Candy</li>
+                <li>Starry Night</li>
+                <li>Edtaonisl</li>
+                <li>MORE COMING</li>
+            </ul>
+        </div>
+
+        <p>Explore the project on GitHub: <a href="https://github.com/iiierie/arTransfer.git" target="_blank">arTransfer GitHub Repository</a></p>
+    </div>
+</body>
+</html>
