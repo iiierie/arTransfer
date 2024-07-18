@@ -1,4 +1,8 @@
 
+![arTransfer](artransfer.png)
+
+
+
 # arTransfer
 
 #### arTransfer is a neural style transfer application that allows you to train your own models or use pre-trained models to stylize images. 
@@ -123,15 +127,27 @@ This script offers a live training solution for style transfer, allowing you to 
 
 - **Performance**: Results may not match those of pre-trained models due to limited live training resources. Accuracy might be low.
 
+---
 
+## Samples
 
+<!-- Original image with specific width -->
+<img src="samples/cat.jpg" width="720" alt="Original">
+<img src="samples/stylized_image.jpg" width="720">
+
+<!-- Stylized images with resized dimensions -->
+<img src="samples/windows_mosaic.png" width="600">
+<img src="samples/cat_edtaonistl.png" width="600">
+<img src="samples/building_ed.png" width="600">
+<img src="samples/building_mosaic.png" width="600">
+<img src="samples/cat_compare.png" width="600">
 
 
 ---
 ## Acknowledgments
 
 - This project is inspired by the original neural style transfer paper by Gatys et al.
-- Thanks to the PyTorch community for providing excellent resources and tutorials.
+- HUGE HUGE Thanks to gordicaleksa for the awesome repo on NST https://github.com/gordicaleksa/pytorch-neural-style-transfer . It became my go-to place for every query regarding NST.
 ---
 
 ## Contact
