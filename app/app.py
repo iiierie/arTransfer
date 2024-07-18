@@ -80,7 +80,7 @@ def main():
 
     if show_readme:
         try:
-            with open('README.md', 'r') as f:
+            with open('APP_README.md', 'r') as f:
                 readme_content = f.read()
             st.markdown(readme_content)  # Display html content
         except Exception as e:
