@@ -9,7 +9,7 @@ import base64
 import numpy as np
 import cv2
 
-
+app_readme_path = os.path.abspath(os.path.join(current_dir, "APP_README.md"))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from stylize import stylize_static_image 
 
@@ -80,7 +80,7 @@ def main():
 
     if show_readme:
         try:
-            with open('APP_README.md', 'r') as f:
+            with open(app_readme_path, 'r') as f:
                 readme_content = f.read()
             st.markdown(readme_content)  # Display html content
         except Exception as e:
