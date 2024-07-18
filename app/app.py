@@ -7,12 +7,7 @@ import sys
 import io
 import base64
 import numpy as np
-
-try:
-    import cv2
-except:
-    !pip install opencv-python
-    import cv2
+import cv2
 
 
 
