@@ -40,11 +40,15 @@ def main():
 
     st.sidebar.markdown('### Choose Style Preset')
 
+    # Define paths relative to the current file's directory (app.py)
+    current_dir = os.path.dirname(__file__)
+    presets_path = os.path.abspath(os.path.join(current_dir, "../presets"))
+    
     style_images = {
-        "mosaic": "../presets/mosaic.jpg",
-        "candy": "../presets/candy.jpg",
-        "starry_night": "../presets/starry_night.jpg",
-        "edtaonisl": "../presets/edtaonisl.jpg"
+        "mosaic": os.path.join(presets_path, "mosaic.jpg"),
+        "candy": os.path.join(presets_path, "candy.jpg"),
+        "starry_night": os.path.join(presets_path, "starry_night.jpg"),
+        "edtaonisl": os.path.join(presets_path, "edtaonisl.jpg")
     }
 
     
