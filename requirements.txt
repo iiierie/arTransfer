@@ -4,3 +4,4 @@ matplotlib==3.9.1
 numpy==1.26.4
 opencv-python-headless
 streamlit==1.36.0
+pillow==10.2.0
