@@ -11,7 +11,7 @@ import numpy as np
 try:
     import cv2
 except:
-    pip install opencv-python
+    !pip install opencv-python
     import cv2
 
 
