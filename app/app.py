@@ -7,7 +7,14 @@ import sys
 import io
 import base64
 import numpy as np
-import cv2
+
+try:
+    import cv2
+except:
+    pip install opencv-python
+    import cv2
+
+
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from stylize import stylize_static_image 
