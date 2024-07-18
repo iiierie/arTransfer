@@ -9,7 +9,7 @@ import base64
 import numpy as np
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from stylize import stylize_static_image  # Assuming this is your stylization function
+from stylize import stylize_static_image 
 
 def get_download_link(img_array, filename):
     buffer = io.BytesIO()
@@ -31,7 +31,7 @@ def resize_image(image_path, target_size=(1080, 1080)):
 def main():
     st.title('arTransfer - a Style Transfer App')
 
-    # Sidebar for uploading image and selecting style
+    
     st.sidebar.title('Options')
     content_image = st.sidebar.file_uploader('Upload Content Image', type=['jpg', 'jpeg', 'png'])
 
@@ -44,7 +44,7 @@ def main():
         "edtaonisl": "../presets/edtaonisl.jpg"
     }
 
-        # Allow user to select a style
+    
     style_choice = st.sidebar.selectbox('Choose a style', list(style_images.keys()))
 
     # Resize style images to a uniform size
@@ -91,7 +91,7 @@ def main():
             # Clean up temp directory
             shutil.rmtree(temp_dir)
 
-            # Provide styled download link for stylized image
+            
             st.markdown(get_download_link(stylized_img_array, 'stylized_image'), unsafe_allow_html=True)
 
 if __name__ == '__main__':
